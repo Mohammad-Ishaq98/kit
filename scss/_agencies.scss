@@ -1,0 +1,41 @@
+.agencies{
+  padding: 150px 0;
+  background: #f6f6f6;
+  header{
+    margin-bottom: 84px;
+    h3{
+      font-size: 38px;
+      color:#282828;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+    p{
+      font-size: 18px;
+      color:#282828;
+      padding-right: 75px;
+    }
+  }
+  .agencies_txt{
+    margin-bottom: 57px;
+    .single_txt{
+      .tick_box{
+        i{
+          font-size: 16px;
+          color:#fff;
+          height: 30px;
+          width: 30px;
+          line-height: 30px;
+          text-align: center;
+          background: #f3a032;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          margin-right: 27px;
+        }
+       }
+    }
+  }
+}

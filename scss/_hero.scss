@@ -1,0 +1,23 @@
+.hero{
+  background-position: center;
+  background-size: cover;
+  .hero_txt{
+    padding-top: 270px;
+    padding-bottom: 370px;
+    h1{
+      color: #fff;
+    }
+    a{
+      margin-top: 25px;
+      display: inline-block;
+      background: linear-gradient(91deg,#dd4026 0%, #e89d34 100%);
+      padding: 20px 40px;
+      color:#fff;
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+    }
+  }
+}

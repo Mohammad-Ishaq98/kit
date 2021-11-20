@@ -1,0 +1,28 @@
+.advertisement{
+  padding: 117px 0;
+  .advertiser_txt{
+    h2{
+      font-size: 48px;
+      color: #282828;
+      line-height: 1.2;
+      margin-bottom: 26px;
+    }
+    p{
+      color: #767676;
+      font-size: 18px;
+    }
+    .advertisement_link{
+      color: #f3a032;
+      font-size: 14px;
+      text-decoration: underline;
+      margin-top: 28px;
+      margin-bottom: 40px;
+      display: inline-block;
+    }
+  }
+  .store{
+    .google_play_store{
+      margin-right: 23px;
+    }
+  }
+}

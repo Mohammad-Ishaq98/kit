@@ -1,0 +1,72 @@
+@use 'var_styles' as v;
+.header_section{
+ position: absolute;
+ left: 0;
+ right: 0;
+ width: 100%;
+  .row{
+    padding-top: 35px;   
+    .logo{
+      img{}
+    }
+    .main_menu{
+      nav{
+        ul{
+          li{
+            display: inline-block;
+            margin-right: 25px;
+            &:not:last-child(){
+              margin-right: 0;
+            }
+            a{
+              color:#dd4026;
+              font-size: v.$smallTxtSize;
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+    .fyn{
+      select{
+        background: transparent;
+        border: none;
+        color: #fff;
+        option{
+          .fyn_txt{
+            color: #fff;
+            margin-right: 25px;
+            &::before{
+            position: relative;
+            right: 6px;
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900;
+            content: "\f078"
+          } }
+        }
+      }
+      .submit_btn{
+        color: #000;
+        background: #fff;
+        padding: 10px 50px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+      }
+    }
+  }
+}
+//responsive css
+.mean-container a.meanmenu-reveal span {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 50px;
+}
+.mean-container .mean-nav {
+  background: #f3a032;
+}
+.mean-container a.meanmenu-reveal {
+  border: none;
+  color: #fff;
+}

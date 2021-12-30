@@ -1,0 +1,38 @@
+@use 'var_style' as v;
+.blog{
+  padding: 70px 0;
+  background: #f7f3f7;
+  .single_blob_box{
+    .blog_top{
+      i{
+        margin: 3px 7px 0 10px;
+      }
+      p{
+        margin-right: 23px;
+        color: #96989d;
+        font-size: 12px;
+        font-weight: v.$temFontWeightBold;
+      }
+    }
+    .blog_center{
+      img{}
+    }
+    .blog_txt{
+      h2{
+        font-size: 26px;
+        font-weight: v.$temFontWeightBold;
+        margin-bottom: 36px;
+        position: relative;
+        &::before{
+          position: absolute;
+          left: 0;
+          bottom: -15px;
+          content: '';
+          width: 28px;
+          height: 3px;
+          background: #000;
+        }
+      }
+    }
+  }
+}

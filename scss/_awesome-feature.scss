@@ -1,0 +1,20 @@
+@use 'var_style' as v;
+.awesome_feature{
+  padding: 77px 0 98px 0;
+  header{
+    margin-bottom: 85px;
+    h3{
+      color: #101010;
+      font-size: 19px;
+      font-weight: v.$temFontWeightBold;
+      line-height: 1.2;
+    }
+    p{
+      font-size: 14px;
+      color: #101010;
+      span{
+        font-weight: v.$temFontWeightBold;
+      }
+    }
+  }
+}

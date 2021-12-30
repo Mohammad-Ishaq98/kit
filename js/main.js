@@ -1,17 +1,30 @@
+//mmenu
+document.addEventListener(
+	"DOMContentLoaded", () => {
+			const menu = new MmenuLight(
+					document.querySelector( "#menu" ),
+					"(max-width: 991px)",
+					
+			);
+
+			const navigator = menu.navigation();
+			const drawer = menu.offcanvas();
+
+			document.querySelector( "a[href='#menu']" )
+					.addEventListener( "click", ( evnt ) => {
+							evnt.preventDefault();
+							drawer.open();
+					});
+	}
+);
+
 (function ($) {
 "use strict";
 
-// meanmenu
-$('.main_menu').meanmenu({
-	meanMenuContainer: '.mobile-menu',
-	meanScreenWidth: "991"
-});
 // data background
 $("[data-background]").each(function(){
 	$(this).css("background-image", "url(" + $(this).attr("data-background") + ")");
 });
-//scrolling opacity
-var animation_start_pos = 1000, animation_end_pos = 2000; //where you want the animation to stop
 
 
 // One Page Nav for Menu Nav
@@ -56,7 +69,11 @@ $(window).scroll(function() {
 	});
 }).scroll();
 
-
+//counter Up
+$('.counter_num').counterUp({
+	delay: 100,
+	time: 2000
+});
 
 //sticky 
 $(window).on('scroll', function () {
@@ -67,8 +84,6 @@ $(window).on('scroll', function () {
 		$(".header").addClass("sticky");
 	}
 });
-
-
 
 // mainSlider
 function mainSlider() {
@@ -113,33 +128,75 @@ function mainSlider() {
 mainSlider();
 
 //clinet slick slider
-$('.client-slick').slick({
+$('.customer_slider').slick({
 	infinite: true,
 	slidesToShow: 1,
 	slidesToScroll: 1,
-	dots: false,
-	prevArrow:'<i class="fa fa-arrow-left arrow_left_clinet"></i>',
-	nextArrow:'<i class="fa fa-arrow-right arrow_right_client"></i>',
+	dots: true,
+	arrows:false,
+	responsive: [
+		{
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 6,
+				slidesToScroll: 1,
+				infinite: true,
+			}
+		},
+		{
+			breakpoint: 769,
+			settings: {
+				slidesToShow:4,
+				slidesToScroll: 1,
+			}
+		},
+		{
+			breakpoint: 481,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 281,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}
+		// You can unslick at a given breakpoint now by adding:
+		// settings: "unslick"
+		// instead of a settings object
+	]
+});
+
+$('.team_slider').slick({
+	infinite: true,
+	slidesToShow: 2,
+	slidesToScroll: 2,
+	dots: true,
+	//prevArrow:'<i class="fa fa-arrow-left arrow_left_clinet"></i>',
+	//nextArrow:'<i class="fa fa-arrow-right arrow_right_client"></i>',
 	responsive: [
 			{
 				breakpoint: 1024,
 				settings: {
-					slidesToShow: 1,
+					slidesToShow: 2,
 					slidesToScroll: 1,
 					infinite: true,
 				}
 			},
 			{
-				breakpoint: 600,
+				breakpoint: 769,
 				settings: {
-					slidesToShow: 1,
+					slidesToShow:3,
 					slidesToScroll: 1,
 				}
 			},
 			{
 				breakpoint: 480,
 				settings: {
-					slidesToShow: 1,
+					slidesToShow: 3,
 					slidesToScroll: 1
 				}
 			}
@@ -149,19 +206,52 @@ $('.client-slick').slick({
 		]
 });
 
-/* magnificPopup img view */
-$('.popup-image').magnificPopup({
-	type: 'image',
-	gallery: {
-	  enabled: true
-	}
+//clinet logo slider
+$('.client_slider2').slick({
+	infinite: true,
+	slidesToShow: 5,
+	slidesToScroll: 4,
+	dots: true,
+	responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1,
+					infinite: true,
+				}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1
+				}
+			}
+			// You can unslick at a given breakpoint now by adding:
+			// settings: "unslick"
+			// instead of a settings object
+		]
 });
 
-/* magnificPopup video view */
-$('.video_play').magnificPopup({
-	type: 'iframe',
+// venobox pop up vdo
+$('.venobox').venobox({
+	framewidth : '400px',                            // default: ''
+    frameheight: '300px',                            // default: ''
+    border     : '10px',                             // default: '0'
+    bgcolor    : '#5dff5e',                          // default: '#fff'
+    titleattr  : 'data-title',                       // default: 'title'
+    numeratio  : true,                               // default: false
+    infinigall : true,                               // default: false
+    share      : ['facebook', 'twitter', 'download'] // default: []
 });
-
 
 // isotop
 $('.grid').imagesLoaded( function() {
@@ -213,8 +303,8 @@ $.scrollUp({
 
 // WOW active
 new WOW().init();
-
-
+	
+		
 })(jQuery);
 /// google map
 function basicmap() {
@@ -246,3 +336,4 @@ function basicmap() {
 if ($('#contact-map').length != 0) {
 	google.maps.event.addDomListener(window, 'load', basicmap);
 }
+

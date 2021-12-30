@@ -1,0 +1,23 @@
+.client_slider{
+  padding: 80px 0;
+  .client-slider-txt{
+    margin-bottom: 50px;
+    p{
+      color: #181818;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    h3{
+      color: #181818;
+      font-size: 32px;
+      font-weight: 800;
+    }
+  }
+  .slick-dots li button {
+    background: #949294;
+  }
+  .slick-dots li button:before {
+    font-size: 0;
+    background: #000;
+    }
+}

@@ -1,0 +1,19 @@
+@use 'var_style' as v;
+.counter{
+  padding: 200px;
+  background: center/cover;
+  .couter_box{
+    i{
+      font-size: 44px;
+      margin-bottom: 35px;
+    }
+    h3{
+      font-size: 53px;
+      font-weight: v.$temFontWeightBold;
+    }
+    p{
+      color: #fff;
+      font-weight: v.$temFontWeightBold;
+    }
+  }
+}

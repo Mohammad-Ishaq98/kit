@@ -1,265 +1,185 @@
-/* Normal desktop :1200px. */
-@media (min-width: 1200.98px) and (max-width: 1399.98px) {
-  .header .main_menu nav ul li a {
-    padding: 45px 20px;
-  }
+/* XL Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
 
+  
 }
 
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
 
-/* Normal desktop :992px. */
-@media (min-width: 991.98px) and (max-width: 1200px) {
-  .header .main_menu nav ul li a {
-    padding: 45px 10px;
+  .icons .single_service_box h3::before {
+    left: 81px;
   }
-  .author .single_author .author_btn_left {
-    margin-right: 0px;
-  }
-  .header_section .logo img{width: 90%;} 
-  .header_section .row .main_menu nav ul li {
-    margin-right: 13px;
-  }
-  .header_section .row .fyn .submit_btn {
-    padding: 10px 40px;
-  }
-  .author .single_author .author_btn_left {
-    padding: 10px 13px;
-  }
-}
-
- 
-/* Tablet desktop :768px. */
-@media (min-width: 767.98px) and (max-width: 990.98px) {
-  h2,h3 {
-    font-size: 28px;
-  }
-  p{
-    font-size: 14px;
-  }
-  .header .main_menu nav ul li a {
-    padding: 45px 10px;
-  }
-  .header_section .row .fyn .submit_btn {
-    padding: 10px 15px;
-  }
-  .author .single_author .author_btn_left {
-    margin-right: 0;
-  }
-  .iocns .single_icon .icon_des h2 {
-    font-size: 25px;
-  }
-  #protfolio .filter-button-group button {
-    font-size: 15px;
-  }
-  .header_logo img {
-    margin-top: 13px;
-  }
-  .header_section .row .fyn .submit_btn {
-    padding: 10px 20px;
-  }
- 
-  .hero .hero_txt {
-    padding-top: 170px;
-    padding-bottom: 170px;
-  }
-  .hero .hero_txt h1 {
-    color: #fff;
-    font-size: 30px;
-  }
-  .hero .hero_txt a {
-    padding: 10px 20px;
-  }
-  .author {
-    margin-top: -85px;
-  }
-  .author .single_author {
-    padding: 20px;
-  }
-  .author .single_author .author_btn_left {
-    padding: 6px 14px;
-  }
-  .why .single_why_box .text p {
-    padding-right: 0;
-  }
-  .how_works {
-    padding: 50px 0;
-  }
-  .mt-115 {
-    margin-top: 25px;
-  }
-  .advertisement .advertiser_txt h2 {
-    font-size: 28px;
-  }
-  .advertisement .advertiser_txt p{
-    font-size: 14px;
-  }
-  .fact {
-    padding-top: 83px;
-    padding-bottom: 83px;
-  }
-  .fact p{
-    font-size: 14px;
-  }
-}
-
- 
-/* small mobile :320px. */
-@media (max-width: 767px) {
-  .header .main_menu nav ul li a {
-    padding: 45px 10px;
-  }
-  .header_section .row .fyn select {
-    font-size: 13px;
-  }
-  .header_section .row .fyn .submit_btn {
-    padding: 5px 5px;
-    font-size: 7px;
-  }
-  .hero .hero_txt h1 {
-    font-size: 18px;
-  }
-  .hero .hero_txt a {
-    padding: 8px 10px;
-    font-size: 10px;
-  }
-  .author .single_author .author_heading {
-    font-size: 20px;
-  }
-  .author .single_author .author_btn_left {
-    padding: 7px 19px;
-    font-size: 12px;
-  }
-  .why header h2 {
-    font-size: 28px;
-  }
-  .why header p {
-    font-size: 12px;
-  }
-  .how_works header h3 {
-    font-size: 28px;
-  }
-  .how_works header p {
-    font-size: 12px;
-  }
-  .mt-115 {
-    margin-top: 85px;
-  }
-  .how_works .cp_box {
-    padding: 13px;
-  }
-  .how_works .cp_box h5 {
-    font-size: 12px;
-  }
-  .advertisement .advertiser_txt h2 {
-    font-size: 18px;
-  }
-  .hero .hero_txt {
-    padding-top: 198px;
-    padding-bottom: 370px;
-  }
-  .store {
-    display: flex;
-  }
-  .store a{
-    width: 34%;
+  .blog .single_blob_box .blog_top p {
     margin-right: 10px;
   }
-  .why .single_why_box .text p {
-    padding-right: 0;
-  }
-  .agencies {
-    padding: 24px 0;
-  }
-  .agencies header p {
-    padding-right: 0;
-  }
-  .video{
-    padding: 30px 0;
-  }
-  .video .video_txt h2 {
-    font-size: 18px;
-  }
-  .video .video_txt p {
-    font-size: 10px;
-    margin-bottom: 22px;
-  }
-  .fact {
-    padding: 25px 0;
-  }
-  .fact header {
-    margin-bottom: 20px;
-  }
-  .fact header h3 {
-    font-size: 28px;
-  }
-  .fact header p {
-    font-size: 8px;
-  }
+}
 
  
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero {
+    padding-top: 86px;
+    padding-bottom: 76px;
+    background-position: 6% 4%;
+  }
+  .mm-ocd--open {
+    background: transparent !important;
+  }
+  .hero {
+    padding-top: 136px;
+    padding-bottom: 100px;
+  }
+  .hero h1 {
+    font-size: 27px;
+  }
+  .hero p {
+    padding-right: 256px;
+  }
+  .services {
+    padding: 50px 0;
+  }
+  .feature_left {
+    margin-bottom: 50px;
+  }
+  .icons .single_service_box h3::before {
+    left: 47px;
+  }
+  .team {
+    padding: 80px 0;
+    text-align: center;
+  }
+  .team_left {
+    margin-bottom: 25px;
+  }
+  .team .single_progress_item .progress .progress-bar p {
+    right: -28px;
+  }
+  .team .row .col-lg-6:nth-child(3) .progress .progress-bar p {
+    right: -24px;
+  }
+  .team .row .col-lg-6:nth-child(4) .progress .progress-bar p {
+    width: 7%;
+    right: -24px;
+  }
+  .awesome_feature {
+    padding: 77px 0 58px 0;
+    text-align: center;
+  }
+  .creative {
+    padding: 40px;
+    text-align: center;
+  }
+  .blog_top {
+    justify-content: center;
+  }
+  .single_blob_box {
+    text-align: center;
+  }
+  .blog .single_blob_box .blog_txt h2::before {
+    left: 42%;
+  }
+  .counter {
+    padding: 50px;
+  }
+}
+
+ 
+/* Extra small Device. */
+@media (max-width: 767px) {
+  .hero {
+    padding-top: 86px;
+    padding-bottom: 76px;
+    background-position: 0% 4%;
+  }
+  .icons .single_service_box h3::before {
+    left: 37%;
+  }
+  .hero h1 {
+    font-size: 33px;
+  }
+  .creative {
+    padding: 10px;
+  }
+  .team {
+    padding: 80px 0;
+    text-align: center;
+  }
+  .isotope {
+    padding: 80px 0;
+  }
+  .blog {
+    text-align: center;
+  }
+  .blog_top {
+    display: inline-flex;
+  }
+  .single_blob_box {
+    margin-bottom: 40px;
+  }
+  .blog .single_blob_box .blog_txt h2::before {
+    left: 47%;
+  }
+  .team_left {
+    margin-bottom: 25px;
+  }
+  .awesome_feature {
+    text-align: center;
+  }
+  .creative .creative_right .creative_txt .creative_btn {
+    padding: 12px 28px;
+  }
+  .counter {
+    padding: 80px;
+  }
+  .hero .herp_btn a {
+    padding: 8px 20px;
+    margin-bottom: 10px;
+    display: block;
+  }
 }
  
-/* Large Mobile :480px. */
+/* SM Small Device :550px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-.container {width:450px}
- 
-  .header .main_menu nav ul li a {
-    padding: 45px 10px;
+  .icons .single_service_box h3::before {
+    left: 167px;
   }
-  .header .main_menu nav ul li a {
-    padding: 45px 10px;
+  .team {
+    padding: 80px 0;
+    text-align: center;
   }
-  .header_section .row .fyn select {
-    font-size: 13px;
+  .isotope {
+    padding: 80px 0;
   }
-  .header_section .row .fyn .submit_btn {
-    padding: 5px 5px;
-    font-size: 7px;
+  .blog {
+    text-align: center;
   }
-  .hero .hero_txt h1 {
-    font-size: 18px;
+  .blog_top {
+    display: inline-flex;
   }
-  .hero .hero_txt a {
-    padding: 8px 10px;
-    font-size: 10px;
+  .single_blob_box {
+    margin-bottom: 40px;
   }
-  .author .single_author .author_heading {
-    font-size: 20px;
+  .blog .single_blob_box .blog_txt h2::before {
+    left: 47%;
   }
-  .author .single_author .author_btn_left {
-    padding: 7px 19px;
-    font-size: 12px;
+  .team_left {
+    margin-bottom: 25px;
   }
-  .why header h2 {
-    font-size: 28px;
+  .awesome_feature {
+    text-align: center;
   }
-  .why header p {
-    font-size: 12px;
+  .creative .creative_right .creative_txt .creative_btn {
+    padding: 12px 28px;
   }
-  .how_works header h3 {
-    font-size: 18px;
+  .counter {
+    padding: 80px;
   }
-  .how_works header p {
-    font-size: 7px;
+  .hero .herp_btn a {
+    padding: 8px 20px;
+    margin-right: 10px;
   }
-  .how_works .cp_box {
-    padding: 13px;
-  }
-  .how_works .cp_box h5 {
-    font-size: 10px;
-  }
-  .mt-115 {
-    margin-top: 85px;
-  }
-  
-  .advertisement .advertiser_txt h2 {
-    font-size: 28px;
-  }
-  .how_works .cp_box h5 {
-    font-size: 18px;
-  }
-  .hero .hero_txt {
-    padding-top: 198px;
-    padding-bottom: 370px;
+  .team .single_progress_item .progress .progress-bar p {
+    font-size: 11px;
   }
 }

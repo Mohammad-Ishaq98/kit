@@ -1,0 +1,77 @@
+@use 'team';
+.customer{
+  padding-bottom: 74px;
+  background-size: cover;
+  background-position: center;
+  .customer_slider{
+    .customer_wrapper{
+      img{
+        position: relative;
+        top: 56px;
+        display: inline-block;
+      }
+      .customer_details{
+        background: #fff;
+        padding: 74px 0;
+        .customer_txt{
+        }
+        .customer_name{
+          h4{}
+        }
+        .professtion{
+          h5{}
+        }
+        .star_rating{
+          input + label{
+            color: red !important;
+            font-size: 10px;
+            text-shadow: 1px 1px 0 #ffe400;
+            cursor: pointer;
+          }
+          input{
+            display: none;
+            // &:checked + label ~ label{
+            //     color: #fff;
+            //  }
+          }
+          label{
+            filter: grayscale(100%); // maybe we want stars to become grey if inactive
+            opacity: .3; 
+          }
+        }
+      }
+    }
+    .slick-dots {
+      padding: 15px 0;
+      bottom: -90px;
+      background: #ff7d8c;
+      width: 145px;
+      left: 50%;
+      transform: translateX(-50%);
+    } 
+    //slick slider custom css 
+    .slick-dots li {
+      background: transparent;
+      border: 1px solid #ffb6bf;
+    }
+    .slick-dots li button {
+      line-height: 20px;
+    }
+    .slick-dots li button:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 6px;
+      content: '\f45c';
+      opacity: 1;
+      color: transparent;
+    }
+    .slick-dots li.slick-active button:before {
+      opacity: 1;
+      color: #ff7d8c;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      line-height: 19px;
+    } 
+  }
+}

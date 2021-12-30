@@ -1,0 +1,29 @@
+@use 'var_style' as v;
+.services{
+  background: #a8cbdf4f;
+  padding: 107px 0;
+  header{
+    margin-bottom: 77px;
+    h2{
+      font-size: 39px;
+      font-weight: v.$temFontWeightBold !important;
+    }
+  }
+  .single_services_box{
+    border: 1px solid #ddd;
+    padding: 60px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    img{
+      margin-bottom: 38px;
+    }
+    h5{
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+    p{font-size: 11px;}
+  }
+}

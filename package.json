@@ -1,32 +1,29 @@
 {
-  "name": "2",
+  "homepage":"http://Mohammad-Ishaq98.github.io/ema-jhon",
+  "name": "3",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile:sass": "sass --watch scss/main.scss:css/main.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohammad-Ishaq98/global-Media.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "sass": "^1.43.4"
+  "bugs": {
+    "url": "https://github.com/Mohammad-Ishaq98/global-Media/issues"
   },
   "dependencies": {
-    "anymatch": "^3.1.2",
-    "binary-extensions": "^2.2.0",
-    "braces": "^3.0.2",
-    "chokidar": "^3.5.2",
-    "fill-range": "^7.0.1",
-    "glob-parent": "^5.1.2",
-    "is-binary-path": "^2.1.0",
-    "is-extglob": "^2.1.1",
-    "is-glob": "^4.0.3",
-    "is-number": "^7.0.0",
-    "normalize-path": "^3.0.0",
-    "picomatch": "^2.3.0",
-    "readdirp": "^3.6.0",
-    "to-regex-range": "^5.0.1"
+    "sass": "^1.43.4"
   },
-  "description": ""
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
 }

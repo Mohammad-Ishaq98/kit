@@ -3,7 +3,7 @@ document.addEventListener(
 	"DOMContentLoaded", () => {
 			const menu = new MmenuLight(
 					document.querySelector( "#menu" ),
-					"(max-width: 991px)",
+					"(max-width: 600px)",
 					
 			);
 
